@@ -4,7 +4,7 @@ MODDIR="$(dirname $(readlink -f "$0"))"
 . ${MODDIR}/files/status.conf
 F_ARCH="${F_ARCH:=arm64}"
 DATADIR="${DATADIR:=/sdcard/Android}"
-MAGISKBB='/data/adb/magisk/busybox'
+MAGISKBB='/data/adb/ksu/bin/busybox'
 
 until [ "$(getprop sys.boot_completed)" -eq 1 ]; do
   sleep 1
